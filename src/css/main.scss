@@ -1,0 +1,73 @@
+@import 'nav';
+@import 'textColor';
+body {
+    font-size: 16px;
+    color: $mainColor;
+}
+
+#root {
+    padding: 10px;
+}
+
+// .App {
+//     background: $mainBackground;
+//     opacity: 0.8;
+// }
+.App {
+    background: $mainBackground;
+    opacity: 0.8;
+    text-align: center;
+    background-image: url("./../img/drawing.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+#addToHome {
+    font-size: 2rem;
+    color: black;
+    background: gray;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    border: solid;
+    opacity: 0.9;
+    border: aqua;
+    border-radius: 2%;
+    display: none;
+}
+
+#addToHome:hover {
+    background: rgb(112, 99, 99);
+    cursor: pointer;
+}
+
+.App-header {
+    font-size: 1.2rem;
+    background: aqua;
+    opacity: 0.8;
+}
+
+input {
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+@keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+
+.ShowOutput {
+    animation-name: example;
+    animation-duration: 4s;
+    font-size: 2rem;
+}
