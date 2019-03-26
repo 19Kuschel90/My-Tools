@@ -9,6 +9,7 @@ import {
 import { InProzent } from './components/inProzent';
 import { Stundenlohnrechner } from './components/stundenlohnrechner';
 import { MyData } from './components/MyData';
+import { brottoNetto } from './components/brottoNetto';
 import './css/normalize.css';
 import './css/main.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -39,6 +40,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/InProzent"  component={InProzent} />
             <Route path="/Stundenlohnrechner"  component={Stundenlohnrechner} />
+            <Route path="/brottoNetto"  component={brottoNetto} />
             <Route path="/MyData"  component={MyData} />
             <Redirect from="/old-match" to="/will-match" />
             <Route path="/will-match" component={WillMatch} />
@@ -56,6 +58,9 @@ class App extends Component {
             </li>
             <li>
               <Link to="/Stundenlohnrechner">Stundenlohnrechner</Link>
+            </li>
+            <li>
+              <Link to="/brottoNetto">Brotto || Netto</Link>
             </li>
             <li>
               <Link to="/MyData">My Data</Link>
